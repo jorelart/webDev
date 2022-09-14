@@ -1,0 +1,11 @@
+ /* Label card */
+.crdLbl{display:inline-flex;padding-bottom:10px;margin-top:-50px;position:relative;white-space:nowrap;max-width:100%;overflow:hidden;overflow-x:scroll;-ms-overflow-style:none}
+.crdLbl::-webkit-scrollbar{display:none}
+.crdWrp{display:inline-flex;position:relative;overflow:hidden;padding:30px 20px;border-radius:15px;color:inherit;background:var(--contentB);box-shadow:var(--shadBs);min-width:160px}
+.crdWrp:hover{transform:scale(1.1);transition:var(--trans-2)}
+.crdWrp:not(first-child,last-child){margin:10px}
+span.label-name{padding-left:20px;font-size:var(--postFm);color:inherit;font-weight:bold}
+span.label-count{position:absolute;left:5px;top:-5px;font-size:calc(var(--postT) + 2.2rem);font-weight:bold;color:inherit;opacity:.1}
+.drK .crdWrp{background:var(--darkBs)}
+.drK span.label-count{}
+.drK:is(span.label-name,span.label-count){color:var(--darkT)}
